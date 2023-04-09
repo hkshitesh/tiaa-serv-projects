@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DemoConfigContext</display-name>
+  
+  
+  <context-param>
+  <param-name>Full_Name</param-name>
+  <param-value>Hitesh Sharma</param-value>  
+  </context-param>
+  
+  <servlet>
+  <servlet-name>Sev1</servlet-name>
+  <servlet-class>upes.Sev1</servlet-class>
+  <init-param>
+  <param-name>First_Name</param-name>
+  <param-value>Hitesh</param-value>  
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Sev1</servlet-name>
+  <url-pattern>/Sev1</url-pattern>  
+  </servlet-mapping>
+  
+    
+  <servlet>
+  <servlet-name>Serv2</servlet-name>
+  <servlet-class>upes.Serv2</servlet-class>
+    <init-param>
+  <param-name>Last_Name</param-name>
+  <param-value>Sharma</param-value>  
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Serv2</servlet-name>
+  <url-pattern>/Serv2</url-pattern>  
+  </servlet-mapping>  
+    
+
+</web-app>
